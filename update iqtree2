@@ -1,0 +1,30 @@
+Preparing system
+Open a terminal by pressing Ctrl+Alt+T. Update and upgrade your system using the following commands:
+
+$ sudo apt-get update
+
+$ sudo apt-get upgrade
+
+Downloading IQ-TREE
+Let’s change to a directory where you want to download the software. We are downloading in ‘Downloads‘.
+
+$ cd Downloads/
+
+To download the software either visit this page or paste the following commands. We are installing stable version 1.6.12 of IQ-TREE for 64-bit multicore Linux. You can also download for 32-bit.
+
+$ wget https://github.com/Cibiv/IQ-TREE/releases/download/v1.6.12/iqtree-1.6.12-Linux.tar.gz
+
+Installing IQ-TREE
+Now extract the downloaded file.
+
+$ tar xvzf iqtree-1.6.12-Linux.tar.gz
+
+A new directory will be created namely, ‘iqtree-1.6.12-Linux‘. Move inside this directory and then to the bin directory.
+
+$ cd iqtree-1.6.12-Linux/bin/
+
+Here you will find an executable file namely, iqtree. Move or copy this file to the /usr/bin/ directory so that you can execute it from anywhere you want.
+
+$ sudo cp iqtree /usr/bin/
+
+Now IQ-TREE can be easily run by typing $ iqtree in the terminal.
